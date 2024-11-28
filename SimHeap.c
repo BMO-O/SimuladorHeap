@@ -231,7 +231,8 @@ int main(){
                         }
                     }
                 }else{
-                    puts("Você quer alocar mais que a quantidade disponível!");
+                    puts("\nVocê quer alocar mais que a quantidade disponível!");
+                    printf("\n");
                     opcao=20;
                 }
 
@@ -348,8 +349,8 @@ int main(){
         }
 
 }
-   
-   
+
+
     puts("");
     areas_vazias* aux5 = head;
     while(aux5!=NULL){ // Imprimir a lista de espaços vazios
