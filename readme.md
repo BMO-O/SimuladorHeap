@@ -1,4 +1,4 @@
-Trabalho I de Paradigmas de Programação - 2024.2 - UFF - Ciência da Computação
+Trabalho I de Paradigmas de Programação - 2025.1 - UFF - Ciência da Computação
 
 Breno Machado, Gabriel Rodrigues e Nuno Couto
 
