@@ -4,10 +4,6 @@
 
 #include "alocador.h"
 
-/*-------------------------------------------------------------------*/
-//TERMINAR DE COMENTAR O CÓDIGO
-/*-------------------------------------------------------------------*/
-
                              /* Início da main() */
 int main() {
     /*Declaração de variáveis */
@@ -98,7 +94,7 @@ int main() {
                     if (auxiliar->quantidade >= qtd) {
                         A[j].inicial = auxiliar->inicial; // Guardando a posição do heap que o ID está
                         fit(A[j], auxiliar->inicial, qtd, heap);
-                        last_indice = auxiliar->inicial;
+                        last_indice = auxiliar->inicial; // Último indíce vai ser o atual
                         head = update_empty_memory(head, auxiliar->inicial, qtd);
                         break;
                     } else
@@ -117,7 +113,7 @@ int main() {
                     }
                     auxiliar1 = auxiliar1->next;
                 }
-                A[j].inicial = indice;
+                A[j].inicial = indice; // Guardando a posição do heap que o ID está
                 fit(A[j], indice, qtd, heap);
                 last_indice = indice;
                 head = update_empty_memory(head, indice, qtd);
@@ -171,17 +167,17 @@ int main() {
 
             case DELETE_ID:
                 puts("Qual ID quer remover?");
-                char aux3;
+                char aux3; // Temporário apenas para salvar o char do ID do teclado
                 scanf(" %c", &aux3);
                 for (int k = 0; k < 10; k++) {
                     if (A[k].id == aux3) {
-                        remove_from_heap(heap, A[k].inicial, A[k].quantidade);
+                        remove_from_heap(heap, A[k].inicial, A[k].quantidade); // Chama a função de remover do heap
                         A[k].id = ' ';
-                        head = new_node(head, A[k].inicial, A[k].quantidade);
+                        head = new_node(head, A[k].inicial, A[k].quantidade); // Adiciona um nó na lista
                     }
                 }
                 // Ordena e aglutina áreas livres após remoção
-                head = insertion_sort(head);
+                head = insertion_sort(head); 
                 head = aglutinacao(head);
                 break;
 
@@ -192,7 +188,7 @@ int main() {
 
     puts("");
     areas_vazias* aux5 = head;
-    while (aux5 != NULL) {
+    while (aux5 != NULL) { // Imprimir a lista de espaços vazios
         printf("Quantidade disponível[%d] indíce[%d]\n", aux5->quantidade, aux5->inicial);
         aux5 = aux5->next;
     }
