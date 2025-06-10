@@ -1,3 +1,7 @@
+/*  Gabriel Rodrigues Marques Valim && Nuno Martins do Couto && Breno Machado de Oliveira
+    Modularização para o Simulador Heap - Paradigmas de Programação 
+*/
+
 #include "alocador.h"
 
 /* Cria um nó na lista encadeada */
