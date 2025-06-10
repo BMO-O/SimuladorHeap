@@ -1,8 +1,8 @@
 Trabalho I de Paradigmas de Programação - 2025.1 - UFF - Ciência da Computação
 
-Breno Machado, Gabriel Rodrigues e Nuno Couto
+Título: Continuando os trabalhos no Simulador de Heap
 
-Título: Aprimoramentos no Simulador do Heap
+Alunos: Breno Machado, Gabriel Rodrigues e Nuno Couto
 
 Funções disponíveis:
 - Inserção (alocação) utilizando Best Fit, Worst Fit, First Fit e Next Fit
